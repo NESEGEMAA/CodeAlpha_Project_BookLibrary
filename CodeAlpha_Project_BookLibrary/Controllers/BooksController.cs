@@ -143,18 +143,14 @@ namespace CodeAlpha_Project_BookLibrary.Controllers
 
         // GET: Books/Edit/5
         [Authorize]
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var book = await _context.Book.FindAsync(id);
             if (book == null)
             {
                 return NotFound();
             }
+
             return View(book);
         }
 
@@ -164,7 +160,7 @@ namespace CodeAlpha_Project_BookLibrary.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Author,BorrowTime,IsReturned")] Book book)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Author,BorrowTime,IsReturned,UserId")] Book book)
         {
             if (id != book.Id)
             {
@@ -175,6 +171,9 @@ namespace CodeAlpha_Project_BookLibrary.Controllers
             {
                 try
                 {
+                    var userId = _userManager.GetUserId(User);
+                    book.UserId = userId; // Ensure UserId is set correctly
+
                     _context.Update(book);
                     await _context.SaveChangesAsync();
                 }
@@ -193,6 +192,7 @@ namespace CodeAlpha_Project_BookLibrary.Controllers
             }
             return View(book);
         }
+
 
         // GET: Books/Delete/5
         [Authorize]

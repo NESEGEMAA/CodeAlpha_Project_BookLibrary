@@ -260,3 +260,4 @@ D:\CSEN\Code Alpha Tasks\CodeAlpha_Project_BookLibrary\CodeAlpha_Project_BookLib
 D:\CSEN\Code Alpha Tasks\CodeAlpha_Project_BookLibrary\CodeAlpha_Project_BookLibrary\obj\Debug\net8.0\CodeAlpha_Project_BookLibrary.pdb
 D:\CSEN\Code Alpha Tasks\CodeAlpha_Project_BookLibrary\CodeAlpha_Project_BookLibrary\obj\Debug\net8.0\CodeAlpha_Project_BookLibrary.genruntimeconfig.cache
 D:\CSEN\Code Alpha Tasks\CodeAlpha_Project_BookLibrary\CodeAlpha_Project_BookLibrary\obj\Debug\net8.0\ref\CodeAlpha_Project_BookLibrary.dll
+D:\CSEN\Code Alpha Tasks\CodeAlpha_Project_BookLibrary\CodeAlpha_Project_BookLibrary\obj\Debug\net8.0\CodeAlpha_Project_BookLibrary.sourcelink.json

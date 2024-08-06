@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeAlpha_Project_BookLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6641cb358faaae31cd5d5af0892ec581298b6b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeAlpha_Project_BookLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeAlpha_Project_BookLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
