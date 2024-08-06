@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CodeAlpha_Project_BookLibrary.props" />
+</Project>

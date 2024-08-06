@@ -1,0 +1,42 @@
+﻿<h4>Book Search</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ShowSearchResults">
+            <div class="form-group">
+                <label for="SearchName" class="control-label">Name</label>
+                <input name="SearchName" class="form-control" id="SearchName" />
+            </div>
+            <div class="form-group">
+                <label for="SearchAuthor" class="control-label">Author</label>
+                <input name="SearchAuthor" class="form-control" id="SearchAuthor" />
+            </div>
+            <div class="form-group">
+                <label for="SearchReturned" class="control-label">Returned</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="SearchReturned" value="true" id="SearchReturnedYes" />
+                    <label class="form-check-label" for="SearchReturnedYes">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="SearchReturned" value="false" id="SearchReturnedNo" />
+                    <label class="form-check-label" for="SearchReturnedNo">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="SearchBorrowTimeFrom" class="control-label">Borrowed From</label>
+                <input name="SearchBorrowTimeFrom" class="form-control" type="date" id="SearchBorrowTimeFrom" />
+            </div>
+            <div class="form-group">
+                <label for="SearchBorrowTimeTo" class="control-label">Borrowed To</label>
+                <input name="SearchBorrowTimeTo" class="form-control" type="date" id="SearchBorrowTimeTo" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
